@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Profile</title>
+    
+    <link href="../style/mod/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="my-bg-color-primary">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mt-3">
+            <div class="website-name float-start mt-3">
+              <a class="navbar-brand text-light fw-bolder" href="#">
+                <img class="img-fluid page-logo-properties me-2" src="../assets/canva/w-logo.png" alt="page-logo">Warren Catilo
+              </a>
+            </div>
+            <div class="website-contents float-end" onclick="onClickAction()" id="websiteMenuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a class="navbar-brand text-dark fw-bolder" href="#">
+                  <img class="img-fluid page-logo-properties me-2" src="../assets/canva/w-logo.png" alt="page-logo">Warren Catilo
+                </a>
+                <a class="nav-link p-3 me-3" href="#">Home</a>
+                <a class="nav-link p-3 me-3" href="#abt-me">About Me</a>
+                <a class="nav-link p-3 me-3" href="#hb">Hobbies</a>
+                <a class="nav-link p-3 me-3" href="#gl">Goals</a>
+                <a class="nav-link p-3 me-3" href="#exp">Expertise</a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Welcome -->
+        <section class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+            <div class="col text-start mx-auto my-my-1">
+              <div class="welcome-txt">
+                <h1 class="display-3 fw-bolder text-light">Hi! I'm Warren</h1>
+                <h4 class="h4 fw-bold fst-italic my-txt-semi-light">Aspiring Innovator, Ready to Protect Network Sector.</h4>
+              </div>
+            </div>
+            <div class="col mt-sm-3"> 
+              <img class="img-fluid float-sm-end my-header-img-properties" src="../assets/img/me-cropped.png" alt="me-bg-right">
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+      <!-- About Me -->
+      <div class="about-me bg-med-gray" id="abt-me">
+        <div class="container py-3">
+          <section class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+            <div class="col">
+              <img class="img-fluid abt-me-img-properties" src="../assets/canva/about-me-2.png" alt="">
+            </div>
+            <div class="col">
+              <h1 class="text-center fw-bolder pb-5 my-txt-black abt-me-txt">About Me<br>
+                <small class="text-start lead">
+                  I am Warren, an Information Technology student who are a big fan of
+                  cybersecurity experts which keeps our Internet Security as what it is today.
+                  Cybersecurity bears a major challenge to the experts across the globe, and I am willing
+                  to take my part to help solve that matter, fight online crimes as well as to learn more 
+                  about threats and mitigation strategies which affects the way internet works.
+                </small>
+              </h1>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="hobbies my-bg-color-primary" id="hb">
+        <div class="container pt-5">
+          <h1 class="text-center text-light fw-bolder">Hobbies</h1>
+          <section class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 mt-5">
+            <div class="col mb-5">
+              <img class="img-fluid mx-auto d-block my-hobby-icon-properties" src="../assets/icons/coding.svg" alt="">
+              <h5 class="h5 text-center text-light mt-3 my-hobby-txt">Love to code</h5>
+            </div>
+            <div class="col mb-5">
+              <img class="img-fluid mx-auto d-block my-hobby-icon-properties" src="../assets/icons/workout.svg" alt="">
+              <h5 class="h5 text-center text-light mt-3 my-hobby-txt">Love to do workout</h5>
+            </div>
+            <div class="col mb-5">
+              <img class="img-fluid mx-auto d-block my-hobby-icon-properties" src="../assets/icons/pizza.svg" alt="">
+              <h5 class="h5 text-center text-light mt-3 my-hobby-txt">Love to eat</h5>
+            </div>
+            <div class="col mb-5">
+              <img class="img-fluid mx-auto d-block my-hobby-icon-properties" src="../assets/icons/sleeping.svg" alt="">
+              <h5 class="h5 text-center text-light mt-3 my-hobby-txt">Love to sleep</h5>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+
+      <!-- Goals/Plan -->
+      <div class="goals bg-color-lawrencium " id="gl">
+        <div class="container py-5">
+          <h1 class="text-center text-light pt-3 fw-bolder">Goals / Plan</h1>
+
+          <section class="row row-cols-1">
+            <!-- 1st Goal -->
+            <div class="col first-goal-col">
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 ">
+                <div class="col first my-5">
+                  <img class="img-fluid float-start my-goal-img-properties pb-5" src="../assets/canva/finish-studies.png" alt="">
+                </div>
+                <div class="col sec my-5">
+                  <h1 class="h1 text-light fw-bolder pb-5"> Finish Studies <br> 
+                    <small class="h6 lead">
+                      Nothing can make my parents very proud of me than finishing my studies. It is also like an achievement to them
+                      given that having a quality education is hard to attain. You have to exert a lot of time and effort as well as tons of money
+                      just to give your child better quality education he/she deserves. For me, it is worth all my time and effort to see myself
+                      accomplished studying.
+                    </small>
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd Goal -->
+            <div class="col sec-goal-col">
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col first my-5">
+                  <h1 class="h1 text-light fw-bolder pb-5"> Get a Good Job <br>
+                    <small class="h6 lead">
+                      Having a good and stable job is necessary for me to help my family in terms of providing their daily needs as well as to buy
+                      whatever I want. Also, preparing for future life events are essential and that is when having a stable job can be really beneficial.
+                    </small>
+                  </h1>
+                </div>
+                <div class="col sec my-5">
+                  <img class="img-fluid float-end my-goal-img-properties pb-5" src="../assets/canva/good-job.png" alt="">
+                </div>
+              </div>  
+            </div>
+
+            <!-- 3rd Goal -->
+            <div class="col third-goal-col">
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col first my-5">
+                  <img class="img-fluid float-start my-goal-img-properties pb-5" src="../assets/canva/earn-money.png" alt="">
+                </div>
+                <div class="col sec my-5">
+                  <h1 class="h1 text-light fw-bolder pb-5"> Earn and Save Money <br>
+                    <small class="h6 lead">
+                      Being able to respond in times of family crisis is one of my goals in life and I can be able to achieve that with the help
+                      of enough money in my savings. Earning a money takes a lot of hardwork and thus, saving a portion of it everytime can be really helpful
+                      in times of family crisis.
+                    </small>
+                  </h1p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4th Goal -->
+            <div class="col fourth-goal-col">
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col first my-5">
+                  <h1 class="h1 text-light fw-bolder pb-5"> Help My Family <br>
+                    <small class="lead">
+                      To help my family is one of my top priorities that's why I am pursuing my studies. I am truly aware of all the hardships my parents
+                      had faced in life just to provide our daily needs and wants. That is why it is necessary for me to bring back their love and kindness
+                      to us, their children by means of studying hard, finish studies and get a good job for us to have a good life in the future.
+                    </small>
+                  </h1>
+                </div>
+                <div class="col sec my-5">
+                  <img class="img-fluid float-end my-goal-img-properties pb-5" src="../assets/canva/help-family.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- 5th Goal -->
+            <div class="col fifth-goal-col">
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col first my-5">
+                  <img class="img-fluid float-start my-goal-img-properties pb-5" src="../assets/canva/buy-what-i-want.png" alt="">
+                </div>
+                <div class="col sec my-5">
+                  <h1 class="h1 text-light fw-bolder pb-5"> Buy Whatever I Want <br>
+                    <small class="lead">
+                      Most of us wants to have things which we usually don't have in life or never experienced to have any. Being able to buy what I
+                      want is also an achievement to me. Happiness brought by things which I can afford for me is irreplaceable and inspires me to work
+                      even better for my future.
+                    </small>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Expertise -->
+      <div class="expertise my-bg-color-secondary" id="exp">
+        <div class="container py-5">
+          <h1 class="text-center text-white mb-5 fw-bolder">Expertise</h1>
+          <section class="row row-cols-1 row-cols-sm-3 row-cols-md-6 mt-5">
+
+            <!-- Cpp -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid" src="../assets/canva/c++.png" alt="c++-img" title="C++" data-bs-toggle="modal" data-bs-target="#cppModal">
+
+              <!-- Modal -->
+              <div class="modal fade" id="cppModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">C++</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/canva/c++.png" alt="">
+                        </div>
+                        <div class="col">
+                          <p>
+                            This is the first programming language that I have learned back in 2020. It introduced me to the world of programming as well
+                            as capabilities of every programming languages in terms of building applications and controlling each and every aspect of it.
+                            It gave me an idea about how applications work, by means of several conditions set by the programmer to achieve the desired output.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid my-goal-icon-properties" src="../assets/canva/python.png" alt="python-img" title="Python" data-bs-toggle="modal" data-bs-target="#pyModal">
+              <!-- Modal -->
+              <div class="modal fade" id="pyModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Python</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid mt-5" src="../assets/canva/python.png" alt="">
+                        </div>
+
+                        <div class="col">
+                          <p>
+                            This is the second programming language that I have learned and is the easiest one for me in terms of code implementation,
+                            due to its simpler syntax. It gave me a lot of flexibility when it comes to programming considering the short amount of time
+                            given to accomplish task. I am able to develop an application as a prerequisite to the subject "Advanced Computer Programming"
+                            during my second year in college using Python. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Java -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid" src="../assets/canva/java.png" alt="java-img" title="Java" data-bs-toggle="modal" data-bs-target="#javaModal">
+  
+              <!-- Modal -->
+              <div class="modal fade" id="javaModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Java</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/canva/java.png" alt="">
+                        </div>
+                        <div class="col">
+                          <p>
+                            For me, Java is better than C++ due to the fact that it uses automatic pointers, reducing complexity especially for
+                            beginners. When I started programming, I don't really understand how pointers work and it gave me a lot of headache especially
+                            when there is a deadline on the way and that's when Java start saving me a lot of headache.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- HTML5 -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid" src="../assets/canva/html-5.png" alt="html-5-img" title="HTML5" data-bs-toggle="modal" data-bs-target="#htmlModal">
+  
+              <!-- Modal -->
+              <div class="modal fade" id="htmlModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">HTML</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid mt-5" src="../assets/canva/html-5.png" alt="">
+                        </div>
+                        <div class="col">
+                          <p>
+                            HTML introduced me the structure of a website, as well as how it was being made. With little to no knowledge about programming,
+                            HTML guided me with the basics. From structuring a website and manipulating each and every elements of the code to understanding
+                            elements relationship with each other HTML made me realize how proper code organization can help to better understand the workings
+                            of it. Code cleanliness and conciseness also needs to be observed when programming and with the help of HTML, I learned how it was done.                    
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CSS3 -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid" src="../assets/canva/css-3.png" alt="css-3-img" title="CSS3" data-bs-toggle="modal" data-bs-target="#cssModal">
+  
+              <!-- Modal -->
+              <div class="modal fade" id="cssModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">CSS</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/canva/css-3.png" alt="">
+                        </div>
+                        <div class="col">
+                          <p>
+                            This language gave me an idea to create beyond what is necessary and to expand my creativity. This helped me better 
+                            organize my HTML elements, as well as to add design for a better website presentation.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- JavaScript -->
+            <div class="col mb-5">
+              <img class="exp-ico mx-auto d-block img-fluid" src="../assets/canva/js.png" alt="javascript-img" title="JavaScript" data-bs-toggle="modal" data-bs-target="#jsModal">
+  
+              <!-- Modal -->
+              <div class="modal fade" id="jsModal">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">JavaScript</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+  
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="row row-cols-2">
+                        <div class="col">
+                          <img class="img-fluid" src="../assets/canva/js.png" alt="">
+                        </div>
+                        <div class="col">
+                          <p>
+                            I am currently learning this language and I would love to explore further so that I can enhance my website capabilities.
+                            Better functionality as well as interactivity is one of my future goals in developing a website and I can achieve that with
+                            the help of JavaScript.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="my-footer py-5 bg-med-gray">
+      <section class="container">
+        <div class="row row-cols-1">
+          <p class="text-muted mb-1 text-center">Copyright &copy; 2022 by Warren Catilo. <br>All Rights Reserved.</p>
+        </div>
+        <!-- social media icons -->
+        <div class="row row-cols-3 mx-auto" style="max-width: 40%;">
+          <div class="col">
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg width="32" height="32" class="bi bi-facebook text-primary mx-auto d-block" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="my-button-hover-bg mx-auto d-block" src="../assets/icons/instagram.svg" alt="cherry" width="32" height="32">  
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://github.com/" target="_blank">
+              <svg width="32" height="32" class="bi bi-github text-black mx-auto d-block" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+          </div> 
+        </div>
+
+      </section>
+    </footer>
+
+    <script src="../style/mod/dist/js/bootstrap.bundle.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
