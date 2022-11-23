@@ -1,0 +1,217 @@
+/*---------------------------Initial Properties------------------------------- */
+.my-txt-semi-light { color: rgb(178, 190, 181); }
+.my-txt-black{ color: #24292f; }
+
+.my-bg-color-primary {
+  background: linear-gradient(120deg, rgba(42, 84, 112), rgba(76, 65, 119));
+}
+.my-bg-color-secondary {
+  background: linear-gradient(240deg, rgba(42, 84, 112), rgba(76, 65, 119));
+}
+.bg-color-lawrencium {
+  background: linear-gradient(240deg, #0f0c29, #302b63, #24243e);
+}
+header .page-logo-properties { width: 50px; }
+header .navbar-nav a { color: #c3c3c4; }
+
+/*-------------------- Header Content --------------------*/
+header .my-my-1 {
+  margin-top: 14.5rem !important;
+  margin-bottom: 2rem !important;
+}
+header .my-header-img-properties { max-width: 85%; }
+
+/*------------------Navbar-Right------------------*/
+header .sidenav {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  padding-top: 60px;
+  background: rgb(233, 236, 239);
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+header .sidenav a {
+  display: block;
+  color: #232323;
+  transition: color 0.3s ease;
+  transition: 0.2s;
+}
+header .sidenav a:first-child {
+  color: rgb(97, 95, 95);
+  width: 8%;
+}
+header .sidenav a:nth-child(2) { margin-top: 0.8rem; }
+header .sidenav a:not(:first-child) { margin-left: 0.4rem; }
+
+header .sidenav a:hover { color: #2ecc71; }
+header .sidenav a:first-child:hover { color: #000; }
+
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1.7rem;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+header span {
+  display: block;
+  color: #f1eded;
+  margin-right: 2rem;
+  font-size: 2.3rem;
+  cursor:pointer;
+}
+
+/*----------- Abt Me -----------*/
+.about-me .abt-me-img-properties {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*----------- Hobbies -----------*/
+.hobbies .my-hobby-icon-properties {
+  margin: auto;
+  width: 50%;
+  transform: translatey(0px);
+	animation: float 3s ease-in-out infinite, glow 1.5s infinite alternate;
+}
+
+@keyframes float {
+	0% {transform: translatey(0px);}
+	50% {transform: translatey(-10px);}
+	100% {transform: translatey(0px);} 
+}
+
+@keyframes glow{
+  from{filter: drop-shadow(5px 5px 20px #9f9fa1);}
+  to{filter: drop-shadow(8px 5px 20px #606063);}
+}
+
+/*----------- Goals -----------*/
+.goals .my-goal-img-properties {
+  filter: drop-shadow(0px 0px 20px #919194);
+  margin: auto;
+  width: 75%;
+}
+.goals .h1 { text-align: center; }
+
+/*----------- Expertise Content -----------*/
+.expertise .exp-ico {
+  width: 70%;
+  filter: drop-shadow(8px 5px 20px #9f9fa1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.expertise .exp-ico:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(8px 5px 20px #c3c3c4);
+}
+
+/*---------------------------Breakpoints------------------------------- */
+/* xsm */
+@media (max-width: 575px){
+  header .my-my-1 {
+    margin-top: 5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  header .my-header-img-properties {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  header .welcome-txt { text-align: center !important; }
+  header .welcome-txt .display-3 { font-size: calc(1.525rem + 3.3vw); }
+  header .welcome-txt .h4 { font-size: 1.25rem; }
+  .about-me .abt-me-img-properties { width: 70%; }
+  .about-me .abt-me-txt { margin-top: 1rem !important; }
+  .hobbies .my-hobby-icon-properties {
+    margin: auto;
+    width: 30%;
+  }
+  .goals .my-goal-img-properties { width: 75%; }
+
+  .goals section .sec-goal-col .first { order: 1; }
+  .goals section .fourth-goal-col .first { order: 1; }
+  .goals .float-start, .goals .float-end {
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+  .goals section .pb-5 { padding-bottom: 1rem !important; }
+  .expertise .exp-ico {
+    width: 27%;
+    margin-bottom: 50px;
+  }
+}
+/* sm */
+@media (min-width: 576px) {  
+  header .my-my-1 {
+    margin-top: 7.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  header .my-header-img-properties { width: 100%; }
+  header .welcome-txt .display-3 { font-size: calc(1.375rem + 1.5vw); }
+  header .welcome-txt .h4 { font-size: 1rem; }
+  .about-me .abt-me-img-properties { max-width: 80%; }
+  .about-me .abt-me-txt { margin-top: 2rem !important; }
+
+  .goals .float-start, .goals .float-end {
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+  .goals section .sec-goal-col .first { order: 1; }
+  .goals section .fourth-goal-col .first { order: 1; }
+  .goals section .pb-5 { padding-bottom: 1rem !important; }
+}
+/* md */
+@media (min-width: 768px) {
+  header .my-my-1 {
+    margin-top: 10.4rem !important;
+    margin-bottom: 2rem !important;
+  }
+  header .my-header-img-properties { width: 100%; }
+  header .welcome-txt .display-3 { font-size: calc(1.425rem + 2.1vw); }
+  header .welcome-txt .h4 { font-size: 1.15rem; }
+  .about-me .abt-me-img-properties { max-width: 65%; }
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width:1199px) {
+  header .my-my-1 {
+    margin-top: 13rem !important;
+    margin-bottom: 2rem !important;
+  }
+  header .my-header-img-properties { width: 100%; }
+  header .welcome-txt .display-3 { font-size: calc(1.475rem + 2.7vw); }
+  header .welcome-txt .h4 { font-size: 1.25rem; }
+  .about-me .abt-me-txt { margin-top: 3.5rem !important; }
+  .about-me .abt-me-img-properties { max-width: 80%; }
+  .about-me .abt-me-txt { margin-top: 3.5rem !important; }
+  .goals .float-start{ float: left !important; }
+  .goals .float-end{ float: right !important; }
+  .goals section .sec-goal-col .first { order: 0; }
+  .goals section .fourth-goal-col .first { order: 0; }
+  .goals section .pb-5 { padding-bottom: 3rem !important; }
+}
+@media (min-width: 1200px){
+  header .my-my-1 {
+    margin-top: 14.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  header .welcome-txt .display-3 { font-size: calc(1.475rem + 2.7vw); }
+  header .welcome-txt .h4 { font-size: 1.25rem; }
+  .about-me .abt-me-img-properties { max-width: 80%; }
+  .about-me .abt-me-txt { margin-top: 7rem !important; }
+  .goals .float-start{ float: left !important; }
+  .goals .float-end{ float: right !important; }
+  .goals section .sec-goal-col .first { order: 0; }
+  .goals section .fourth-goal-col .first { order: 0; }
+  .goals section .pb-5 { padding-bottom: 3rem !important; }
+}
